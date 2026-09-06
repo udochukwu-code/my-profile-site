@@ -4,13 +4,18 @@
         <meta name="viewport" content="=width=device-width, initial-scale=1.0"
         <meta charset="UTF-8">
         <title>My profile  site</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <header>
-            <h1>My Site</h1>
+            <h1>DIKE Victor Udochukwu</h1>
+            <button id="navToggle" aria-label="Toggle navigation"></button>
             <nav>
-                <a href="Home">Home</a></a>
-                <a href="About">About</a>
+                <a href="#Home">Home</a></a>
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a></a>
+                <a href="#Projects">Projects</a></a>
+                <a href="#contact">contact</a></a>
             </nav>
     </header>
     <main>
@@ -18,19 +23,39 @@
                 <h2>About Me</h2>
             <p>I'm learning Web Development.</p></p>
             </section>
+            <section id="Skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="Skill-card">HTML</div>
+                    <div class="Skill-card">CSS</div>
+                    <div class="Skill-card">JavaScript</div>
+                    <div class="Skill-card">git &amp; GitHub</div>
+                    <div class="Skill-card">Responsive Design</div>
+                    <div class="Skill-card">Web Security Basic</div>
+                </div>
+            </section>
+            <section id="Projects">
+                <h2>Projects</h2>
+                <div id="ProjectsContainer" class="Project-grid">
+                    <p>Loading Projects...</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="ContactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">submit</button>
+                </form>
+            </section>
     </main>
-    <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">message:</label>
-            <input type="text" id="message" name="message" required>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">submit</button>
-        </form>
+    
         <footer>
-            <p>&copy; 2026 DIKE Victor</p>
+            <p>&copy; <span id="year">2026</span> DIKE Victor Udochukwu</p>
         </footer>
         </body>
 </html>
